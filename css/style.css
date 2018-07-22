@@ -1,0 +1,53 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.banner {
+  max-width: 450px;
+  margin: auto;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.brand-logo {
+  letter-spacing: -3px;
+}
+
+.logo {
+  font-family: helvetica;
+  font-size: 200px;
+  letter-spacing: -16px;
+  box-sizing: content-box;
+  height: 1.2em;
+}
+
+.typewrite {
+  margin: 0px;
+}
+
+.jumbotron {
+  max-height: 300px;
+}
+
+.information {
+  text-align: justify;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+/* .nav, {
+  background-color: ; !important
+} */
