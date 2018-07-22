@@ -36,10 +36,6 @@
   margin: 0px;
 }
 
-.jumbotron {
-  max-height: 300px;
-}
-
 .information {
   text-align: justify;
 }
@@ -48,6 +44,14 @@
   font-weight: 800;
 }
 
-/* .nav, {
-  background-color: ; !important
-} */
+
+
+#index-banner {
+  background: url('../img/background_opaque.png');
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.no-pad-bot {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .01), 0 0 8px 0 rgba(0, 0, 0, .01);
+}
