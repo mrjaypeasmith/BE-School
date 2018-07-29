@@ -4,14 +4,15 @@
 
 User's should be able to:
 
-1. View the website responsively on any device [x]
-2. Request a demo class [ ]
-3. Contact the management team [x]
-3. Get an overview of the classes on offer [x]
-4. Students / teachers can login to the portal [ ]
-5. Find our blog [ ]
-6. Connect with us on social media [ ]
-7. See Testimonials [ ]
+- [x] View the website responsively on any device 
+- [ ] Request a demo class
+- [x] Contact the management team via LinkedIn
+- [x] Get an overview of the classes on offer 
+- [ ] Students / teachers can login to the portal
+- [x] Users can Find our blog
+- [ ] Connect with us on social media
+- [ ] See Testimonials
+- [ ] See companies we work with
 
 ## How this site was built
 
