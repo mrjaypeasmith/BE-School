@@ -36,6 +36,10 @@
   margin: 0px;
 }
 
+.who-are-we {
+  padding-top: 50px;
+}
+
 .information {
   text-align: justify;
 }
@@ -43,8 +47,6 @@
 .card-title {
   font-weight: 800;
 }
-
-
 
 #index-banner {
   background: url('../img/background_opaque.png');
