@@ -8,11 +8,12 @@ User's should be able to:
 - [ ] Request a demo class
 - [x] Contact the management team via LinkedIn
 - [x] Get an overview of the classes on offer 
-- [ ] Students / teachers can login to the portal
+- [x] Students / teachers can connect to the portal
 - [x] Users can Find our blog
 - [ ] Connect with us on social media
 - [ ] See Testimonials
-- [ ] See companies we work with
+- [x] See companies we work with
+- [ ] Messenger facebook plugin\"poiuytruiopicx ghjkl;.k ry90
 
 ## How this site was built
 
