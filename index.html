@@ -1,410 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>be School</title>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>be School</title>
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  </head>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Navbar -->
 
-<body>
-  <!-- Navbar -->
+    <nav class="bepink" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">be</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a
+              href="#"
+              class="tooltipped"
+              data-position="left"
+              data-tooltip="Translation coming soon!"
+              >EN / ESP</a
+            >
+          </li>
+          <li>
+            <a href="#who-are-we">Who are we?</a>
+          </li>
+          <li>
+            <a href="#programs">Programs</a>
+          </li>
+          <li>
+            <a href="#meet-the-team">Contact</a>
+          </li>
+          <li>
+            <a href="https://medium.com/be-school" target="_blank">Blog</a>
+          </li>
+          <li>
+            <a href="https://beschool.com.mx/admin/index.php" target="_blank"
+              >Login</a
+            >
+          </li>
+        </ul>
 
-  <nav class="bepink" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">be</a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="#" class="tooltipped" data-position="left" data-tooltip="Translation coming soon!">EN / ESP</a>
-        </li>
-        <li>
-          <a href="#who-are-we">Who are we?</a>
-        </li>
-        <li>
-          <a href="#programs">Programs</a>
-        </li>
-        <li>
-          <a href="#meet-the-team">Contact</a>
-        </li>
-        <li>
-          <a href="https://medium.com/be-school" target="_blank">Blog</a>
-        </li>
-        <li>
-          <a href="https://beschool.com.mx/admin/index.php" target="_blank">Login</a>
-        </li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav grey-text text-darken-3">
-        <li>
-          <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Translation coming soon!">EN / ESP</a>
-        </li>
-        <li>
-          <a href="#who-are-we">Who are we?</a>
-        </li>
-        <li>
-          <a href="#programs">Programs</a>
-        </li>
-        <li>
-          <a href="#meet-the-team">Contact</a>
-        </li>
-        <li>
-          <a href="https://medium.com/be-school" target="_blank">Blog</a>
-        </li>
-        <li>
-          <a href="https://beschool.com.mx/admin/index.php" target="_blank">Login</a>
-        </li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse">
-        <i class="material-icons">menu</i>
-      </a>
-    </div>
-  </nav>
-
-
-  <!-- Banner -->
-
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container center">
-      <br>
-      <br>
-      <div class="card banner z-depth-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <!-- Logo -->
-        <div>
-          <header class="logo bepink-text">be</header>
-          <!-- <p class="light">business english</p> -->
-        </div>
-        <h3 class="typewrite" data-period="2000" data-type='[ "ambitious", "creative", "confident", "school" ]'></h3>
-        <br>
-        <div class="row center">
-          <h5 class="header col s12 light">We love what we do
-            <br> We customize classes for you</h5>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="row center">
-        <a href="#modal1" class="btn-large waves-effect waves-light bepink modal-trigger z-depth-4">Request demo class</a>
-      </div>
-      <br>
-      <br>
-
-    </div>
-  </div>
-
-  <!-- Modal -->
-
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Your details</h4>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="Company" type="text" class="validate">
-              <label for="password">Company</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Send request</a>
-    </div>
-  </div>
-
-   <!--   Who Are We   -->
-  <div class="container who-are-we" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-    <div class="section">
-      <div class="row">
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center bepink-text">
-              <i class="material-icons">settings</i>
-            </h2>
-            <h5 class="center scrollspy" id="who-are-we">About</h5>
-
-            <p class="light information">We are a team of native English speakers in Mexico City. We love to teach face-to-face, using modern techniques.
-              Our goal is to help entrepreneurs and business professionals exceed their potential, helping them connect and
-              do business globally.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center bepink-text">
-              <i class="material-icons">build</i>
-            </h2>
-            <h5 class="center">Method</h5>
-
-            <p class="light information">Our method offers a combination of theory, practice, dramatization, role-play, and technology in order to increase
-              self-awareness and focus on negotiations. This allows participants to apply the skills acquired in real world
-              situations.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center bepink-text">
-              <i class="material-icons">all_inclusive</i>
-            </h2>
-            <h5 class="center">Philosophy</h5>
-
-            <p class="light information">Our philosophy is to partner with our clients. Everything we do is customized. We can help your employees add
-              even greater value to your company and themselves. They will become your international ambassadors when you
-              are conducting business in global markets.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <br>
-    <br>
-  </div>
-
-
-  <!-- Program Section -->
-
-  <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-    <h3 class="center scrollspy" id="programs">Programs</h3>
-    <div class="section">
-      <div class="row">
-        <div class="col s12">
-          <ul class="collapsible popout" data-collapsible="accordion">
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">person_add</i>
-                <span class="bepink-text">be &nbsp</span>ADVANCED EXECUTIVE</div>
-              <div class="collapsible-body pink lighten-5 light">
-                <span>
-                  The Advanced Executive course is designed for business professionals who aim to perfect their business skills when negotiating,
-                  attending meetings, and giving presentations, in the context of engaging topics such as marketing, personal
-                  branding, economics and corporate social media
-                  <br>
-                  <br> "Ditch the PowerPoint and speak for yourself" - Zoe Smith, CEO
-                </span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">lightbulb_outline</i>
-                <span class="bepink-text">be &nbsp</span>EXECUTIVE</div>
-              <div class="collapsible-body pink lighten-5 light">
-                <span>
-                  This course offers a unique learning experience. You will be trained by professional teachers to increase your skills and
-                  learn high business standards in English that you can apply to your profession every day.
-                  <br>
-                  <br> Learn techniques to build or strengthen your confidence in public effective. These courses are designed
-                  for complete interaction, combining theoretical and practical learning and support for all multimedia materials.
-                  <br>
-                  <br> The course includes:
-                  <br>
-                  <br> Presentations and stimulating confidence
-                  <br> Meetings and virtual communication
-                  <br> Leadership
-                  <br> Negotiations
-                  <br> Sales and Marketing
-                  <br> Multicultural Awareness
-                  <br> Excellence in Customer Service
-                </span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">headset</i>
-                <span class="bepink-text">be &nbsp</span>BILLINGUAL</div>
-              <div class="collapsible-body pink lighten-5 light">
-                <span>
-                  Whatever your level of English, our native English language teachers are trained to identify the needs of each student and
-                  create an active as opposed to passive learning experience.
-                  <br>
-                  <br> We have the ability to customize courses and materials depending on your level, using dynamic resources
-                  and strategies that will help motivate you and move you up to the next level.</span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">cloud_queue</i>
-                <span class="bepink-text">be &nbsp</span>CREATIVE</div>
-              <div class="collapsible-body pink lighten-5 light">
-                <span>
-                  A fully customized course that is built tailored to your individual needs. Do you need to give an important presentation?
-                  We provide intensive sessions to make it perfect.
-                  <br>
-                  <br> Do you communicate in English via E-mail daily with international partners and need to polish your writing?
-                  We will design a course focused on improving key aspects of writing and avoiding awkward mistakes! Whatever
-                  your work area, we will deliver what you are looking for, when you need it. </span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <!-- Contact section -->
-
-  <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-    <h3 class="center scrollspy" id="meet-the-team">Meet the Team</h3>
-
-    <div class="section">
-      <div class="row">
-
-        <!-- Zoe -->
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/zoe2.jpg">
-              <span class="card-title">Zoe</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light bepink" href="https://www.linkedin.com/in/zoe-smith-6b82974/"
-                target="_blank">
-                <i class="material-icons">contact_mail</i>
-              </a>
-            </div>
-            <div class="card-content">
-              <p>Zoe was born in the UK. She founded
-                <span class="bepink-text">be</span> School in 2014 when she moved to Mexico City after several years teaching English. </p>
-              <br>
-            </div>
-          </div>
-        </div>
-
-        <!-- Daniel  -->
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/daniel.jpg">
-              <span class="card-title">Daniel</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light bepink" href="https://www.linkedin.com/in/daniel-serrano-montiel-8a15b5a3/"
-                target="_blank">
-                <i class="material-icons">contact_mail</i>
-              </a>
-            </div>
-            <div class="card-content">
-              <p>Daniel was born in Mexico City but grew up in Texas. Daniel is
-                <span class="bepink-text">be</span> School's client manager and oversees our client relationships and implentation of classes.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Nadine -->
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/nadine.jpg">
-              <span class="card-title">Nadine</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light bepink" href="https://www.linkedin.com/in/nadineheir/" target="_blank">
-                <i class="material-icons">contact_mail</i>
-              </a>
-            </div>
-            <div class="card-content">
-              <p>Nadine is from the UK but has lived in Mexico City for almost a decade. Nadine is a copywriter and oversees
-                <span class="bepink-text">be</span> School's course content.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- New Row -->
-<div class="row">
-  <div class="col s12 m4 push-m4">
-    <div class="card">
-      <div class="card-image">
-        <img src="img/yana.jpg">
-        <span class="card-title">Yana</span>
-        <a class="btn-floating halfway-fab waves-effect waves-light bepink" href="https://www.twitter.com/yayev" target="_blank">
-          <i class="material-icons">contact_mail</i>
+        <ul id="nav-mobile" class="side-nav grey-text text-darken-3">
+          <li>
+            <a
+              href="#"
+              class="tooltipped"
+              data-position="bottom"
+              data-tooltip="Translation coming soon!"
+              >EN / ESP</a
+            >
+          </li>
+          <li>
+            <a href="#who-are-we">Who are we?</a>
+          </li>
+          <li>
+            <a href="#programs">Programs</a>
+          </li>
+          <li>
+            <a href="#meet-the-team">Contact</a>
+          </li>
+          <li>
+            <a href="https://medium.com/be-school" target="_blank">Blog</a>
+          </li>
+          <li>
+            <a href="https://beschool.com.mx/admin/index.php" target="_blank"
+              >Login</a
+            >
+          </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
         </a>
       </div>
-      <div class="card-content">
-        <p>Yana is from the United States. Yana has a background in education and runs <span class="bepink-text">be</span> School's social media channels.</p>
+    </nav>
+
+    <!-- Banner -->
+
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container center">
+        <br />
+        <br />
+        <div
+          class="card banner z-depth-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <!-- Logo -->
+          <div>
+            <header class="logo bepink-text">be</header>
+            <!-- <p class="light">business english</p> -->
+          </div>
+          <h3
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "ambitious", "creative", "confident", "school" ]'
+          ></h3>
+          <br />
+          <div class="row center">
+            <h5 class="header col s12 light">
+              We love what we do <br />
+              We customize classes for you
+            </h5>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row center">
+          <a
+            href="mailto:info@beschool.com.mx?subject=English%20Classes%20with%20BE%20School"
+            class="btn-large waves-effect waves-light bepink modal-trigger z-depth-4"
+            >Request demo class</a
+          >
+        </div>
+        <br />
+        <br />
       </div>
     </div>
-  </div>
-</div>
-      
 
+    <!-- Modal -->
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Your details</h4>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate" />
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="Company" type="text" class="validate" />
+                <label for="password">Company</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="#"
+          class="modal-action modal-close waves-effect waves-green btn-flat"
+          >Send request</a
+        >
+      </div>
     </div>
 
-  </div>
-  <br>
-  <br>
-  <!-- Our Clients -->
-  <div class="container">
-    <div class="section center">
-      <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <h3 class="center">Our clients</h3>
-        <!-- <p class="light information">We work with global companies and individuals with a presence in Mexico City</p> -->
-        <div class="carousel">
-          <a class="carousel-item" href="#one!">
-            <img src="img/Co-Logos/daimler.png">
-          </a>
-          <a class="carousel-item" href="#two!">
-            <img src="img/Co-Logos/danone.png">
-          </a>
-          <a class="carousel-item" href="#three!">
-            <img src="img/Co-Logos/hino.png">
-          </a>
-          <a class="carousel-item" href="#four!">
-            <img src="img/Co-Logos/mitsui.png">
-          </a>
-          <a class="carousel-item" href="#five!">
-            <img src="img/Co-Logos/subaru.png">
-          </a>
-          <a class="carousel-item" href="#seven!">
-            <img src="img/Co-Logos/hilton.png">
-          </a>
-          <a class="carousel-item" href="#eight!">
-            <img src="img/Co-Logos/kpmg.png">
-          </a>
-          <a class="carousel-item" href="#nine!">
-            <img src="img/Co-Logos/banorte.png">
-          </a>
-          <a class="carousel-item" href="#ten!">
-            <img src="img/Co-Logos/dishnetwork.png">
-          </a>
-          <a class="carousel-item" href="#eleven!">
-            <img src="img/Co-Logos/sener.png">
-          </a>
-          <a class="carousel-item" href="#twelve!">
-            <img src="img/Co-Logos/mapfre.png">
-          </a>
-          <a class="carousel-item" href="#thirteen!">
-            <img src="img/Co-Logos/purecircle.png">
-          </a>
+    <!--   Who Are We   -->
+    <div
+      class="container who-are-we"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center bepink-text">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center scrollspy" id="who-are-we">About</h5>
+
+              <p class="light information">
+                We are a team of native English speakers in Mexico City. We love
+                to teach face-to-face, using modern techniques. Our goal is to
+                help entrepreneurs and business professionals exceed their
+                potential, helping them connect and do business globally.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center bepink-text">
+                <i class="material-icons">build</i>
+              </h2>
+              <h5 class="center">Method</h5>
+
+              <p class="light information">
+                Our method offers a combination of theory, practice,
+                dramatization, role-play, and technology in order to increase
+                self-awareness and focus on negotiations. This allows
+                participants to apply the skills acquired in real world
+                situations.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center bepink-text">
+                <i class="material-icons">all_inclusive</i>
+              </h2>
+              <h5 class="center">Philosophy</h5>
+
+              <p class="light information">
+                Our philosophy is to partner with our clients. Everything we do
+                is customized. We can help your employees add even greater value
+                to your company and themselves. They will become your
+                international ambassadors when you are conducting business in
+                global markets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+
+    <!-- Program Section -->
+
+    <div
+      class="container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <h3 class="center scrollspy" id="programs">Programs</h3>
+      <div class="section">
+        <div class="row">
+          <div class="col s12">
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <!-- Advanced Executive -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">person_add</i>
+                  <span class="bepink-text">be &nbsp</span>ADVANCED EXECUTIVE
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <span>
+                    <span class="bepink-text">1:1 classes</span>
+                    <br /><br />
+                    This unique <span class="bepink-text">be</span> School
+                    course is designed for professionals who aim to perfect
+                    their business skills. We hone negotiating, meeting and
+                    presentation skills through engaging topics.
+                    <hr />
+                    <ul>
+                      <li>$500 MXN per hour</li>
+                      <li>$1,500 MXN materials</li>
+                      <li>Course duration tailored to your needs</li>
+                    </ul>
+                    <br />
+                    <span class="bepink-text"
+                      >"Ditch the PowerPoint and speak for yourself"</span
+                    >
+                    - Zoe Smith, CEO
+                  </span>
+                </div>
+              </li>
+              <!-- Executive -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">person</i>
+                  <span class="bepink-text">be &nbsp</span>EXECUTIVE
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <span>
+                    <span class="bepink-text">1:1 classes</span>
+                    <br /><br />
+                    A fully customized course that is built to suit your
+                    individual requirements, delivered one-to-one.
+                    <br />
+                    Whatever your job demands, we provide exactly what you are
+                    asking for, when you need it.
+                    <hr />
+                    <ul>
+                      <li>$450 MXN per hour</li>
+                      <li>$1,500 MXN materials</li>
+                      <li>1:1 classes</li>
+                      <li>Course duration tailored to your needs</li>
+                    </ul>
+                  </span>
+                </div>
+              </li>
+              <!-- Business English -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">group</i>
+                  <span class="bepink-text">be &nbsp</span>BUSINESS ENGLISH
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <span>
+                    <span class="bepink-text">Group classes</span>
+                    <br /><br />
+                    A unique learning experience; you will learn a higher and
+                    more applicable standard of business English, using proven
+                    confidence building techniques. These courses are designed
+                    for full interaction between students.
+                    <hr />
+                    <ul>
+                      <li>$250 MXN per hour</li>
+                      <li>$1,500 MXN materials</li>
+                      <li>4+ students</li>
+                      <li>8 month level duration</li>
+                    </ul>
+                    <br />
+                    <span class="bepink-text"
+                      >"Our flagship group class course"</span
+                    >
+                    - Zoe Smith, CEO
+                  </span>
+                </div>
+              </li>
+              <!-- Conversation -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">phone_in_talk</i>
+                  <span class="bepink-text">be &nbsp</span>CONVERSATION
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <span>
+                    <span class="bepink-text">Group classes</span>
+                    <br /><br />
+                    For all levels of English, our teachers are trained to
+                    identify the needs of individual students and create an
+                    active learning experience. Students practice through
+                    presentations, negotiations, and role-plays (either
+                    individually or in groups).
+                    <hr />
+                    <ul>
+                      <li>$200 MXN per hour</li>
+                      <li>$1,000 MXN materials</li>
+                      <li>4+ students</li>
+                      <li>10 month level duration</li>
+                    </ul>
+                  </span>
+                </div>
+              </li>
+              <!-- Online classes -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">cloud_done</i>
+                  <span class="bepink-text">be &nbsp</span>ONLINE CLASSES
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <span>
+                    <span class="bepink-text">Group classes</span>
+                    <br /><br />
+                    Our teachers offer the same quality teaching with the option
+                    to take your class wherever suits you. This dynamic is
+                    suitable for all levels of English and perfect for
+                    Executives who are constantly on the go.
+                    <hr />
+                    <ul>
+                      <li>$200 MXN per hour</li>
+                      <li>$1,000 MXN materials</li>
+                      <li>10 month level duration</li>
+                    </ul>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Scrollspy -->
-  <!-- <div class="row">
+    <br />
+    <br />
+    <!-- Contact section -->
+
+    <div
+      class="container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <h3 class="center scrollspy" id="meet-the-team">Meet the Team</h3>
+
+      <div class="section">
+        <div class="row">
+          <!-- Zoe -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/zoe2.jpg" />
+                <span class="card-title">Zoe</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light bepink"
+                  href="https://www.linkedin.com/in/zoe-smith-6b82974/"
+                  target="_blank"
+                >
+                  <i class="material-icons">contact_mail</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  Zoe was born in the UK. She founded
+                  <span class="bepink-text">be</span> School in 2014 when she
+                  moved to Mexico City after several years teaching English.
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <!-- Daniel  -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/daniel.jpg" />
+                <span class="card-title">Daniel</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light bepink"
+                  href="https://www.linkedin.com/in/daniel-serrano-montiel-8a15b5a3/"
+                  target="_blank"
+                >
+                  <i class="material-icons">contact_mail</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  Daniel was born in Mexico City but grew up in Texas. Daniel is
+                  <span class="bepink-text">be</span> School's client manager
+                  and oversees our client relationships and implentation of
+                  classes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nadine -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/nadine.jpg" />
+                <span class="card-title">Nadine</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light bepink"
+                  href="https://www.linkedin.com/in/nadineheir/"
+                  target="_blank"
+                >
+                  <i class="material-icons">contact_mail</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  Nadine is from the UK but has lived in Mexico City for almost
+                  a decade. Nadine is a copywriter and oversees
+                  <span class="bepink-text">be</span> School's course content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Row -->
+        <div class="row">
+          <div class="col s12 m4 push-m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/yana.jpg" />
+                <span class="card-title">Yana</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light bepink"
+                  href="https://www.twitter.com/yayev"
+                  target="_blank"
+                >
+                  <i class="material-icons">contact_mail</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  Yana is from the United States. Yana has a background in
+                  education and runs
+                  <span class="bepink-text">be</span> School's social media
+                  channels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- Our Clients -->
+    <div class="container">
+      <div class="section center">
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <h3 class="center">Our clients</h3>
+          <!-- <p class="light information">We work with global companies and individuals with a presence in Mexico City</p> -->
+          <div class="carousel">
+            <a class="carousel-item" href="#one!">
+              <img src="img/Co-Logos/daimler.png" />
+            </a>
+            <a class="carousel-item" href="#two!">
+              <img src="img/Co-Logos/danone.png" />
+            </a>
+            <a class="carousel-item" href="#three!">
+              <img src="img/Co-Logos/hino.png" />
+            </a>
+            <a class="carousel-item" href="#four!">
+              <img src="img/Co-Logos/mitsui.png" />
+            </a>
+            <a class="carousel-item" href="#five!">
+              <img src="img/Co-Logos/subaru.png" />
+            </a>
+            <a class="carousel-item" href="#seven!">
+              <img src="img/Co-Logos/hilton.png" />
+            </a>
+            <a class="carousel-item" href="#eight!">
+              <img src="img/Co-Logos/kpmg.png" />
+            </a>
+            <a class="carousel-item" href="#nine!">
+              <img src="img/Co-Logos/banorte.png" />
+            </a>
+            <a class="carousel-item" href="#ten!">
+              <img src="img/Co-Logos/dishnetwork.png" />
+            </a>
+            <a class="carousel-item" href="#eleven!">
+              <img src="img/Co-Logos/sener.png" />
+            </a>
+            <a class="carousel-item" href="#twelve!">
+              <img src="img/Co-Logos/mapfre.png" />
+            </a>
+            <a class="carousel-item" href="#thirteen!">
+              <img src="img/Co-Logos/purecircle.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrollspy -->
+    <!-- <div class="row">
   <div class="col hide-on-small-only m12 l12 offset -xl1">
       <ul class="section table-of-contents">
           <li><a href="#who-are-we">Who are we?</a></li>
@@ -414,77 +578,105 @@
   </div>
 </div> -->
 
-<!-- Privacy Modal -->
+    <!-- Privacy Modal -->
 
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <h3>Privacy Policy</h3>
-    <h4>Our Website</h4>
-    <p>By using this website you agree to our Privacy Policy. We do not collect information automatically on our users.  Information will be collected should you send a request to us or sign up for our newsletter. We will process the information sent to us in order to provide you with details of our services.  We will not pass your information to any third parties.</p>
-    <h4>Emails sent from us</h4>
-    <p>The information contained in messages sent from us and its attachments is confidential and for the exclusive use of the individual or entity to which the email was addressed.  If you received an email from us message in error, you must not review, forward, print, copy, use or disseminate its content and must delete it immediately.  Please notify us about such situations by e-mail.</p>
-    <h4>Links to third party websites</h4>
-    <p>Our website and emails may contain links to other websites. We are not responsible for the content or practices of these other sites and we recommend that you check their own privacy policies.</p>
-    <p></p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Acknowledge</a>
-  </div>
-</div>
-
-  <!-- footer -->
-
-  <footer class="page-footer pink lighten-5">
-    <div class="container">
-      <div class="row">
-        <div class="col l3 s12">
-          <h5 class="bepink-text">Contact</h5>
-          <ul>
-            <li>
-              <a class="black-text" href="#!">
-                <i class="material-icons tiny">mail_outline</i> info@beschool.com.mx</a>
-            </li>
-            <li>
-              <a class="black-text" href="#!">
-                <i class="material-icons tiny">local_phone</i> + 52 55 7064 5339</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="bepink-text">Settings</h5>
-          <ul>
-            <li>
-              <a class="black-text modal-trigger" href="#modal2">Privacy Policy</a>
-            </li>
-            <li>
-              <a class="black-text" href="#!">Terms and conditions</a>
-            </li>
-          </ul>
-        </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h3>Privacy Policy</h3>
+        <h4>Our Website</h4>
+        <p>
+          By using this website you agree to our Privacy Policy. We do not
+          collect information automatically on our users. Information will be
+          collected should you send a request to us or sign up for our
+          newsletter. We will process the information sent to us in order to
+          provide you with details of our services. We will not pass your
+          information to any third parties.
+        </p>
+        <h4>Emails sent from us</h4>
+        <p>
+          The information contained in messages sent from us and its attachments
+          is confidential and for the exclusive use of the individual or entity
+          to which the email was addressed. If you received an email from us
+          message in error, you must not review, forward, print, copy, use or
+          disseminate its content and must delete it immediately. Please notify
+          us about such situations by e-mail.
+        </p>
+        <h4>Links to third party websites</h4>
+        <p>
+          Our website and emails may contain links to other websites. We are not
+          responsible for the content or practices of these other sites and we
+          recommend that you check their own privacy policies.
+        </p>
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="#"
+          class="modal-action modal-close waves-effect waves-green btn-flat"
+          >Acknowledge</a
+        >
       </div>
     </div>
-    <div class="footer-copyright pink lighten-5">
-      <div class="container black-text">
-        Copyright © 2018
-        <span class="bepink-text">be School</span> | Made with
-        <a class="bepink-text" href="http://materializecss.com">Materialize</a> by THE Co. Media
+
+    <!-- footer -->
+
+    <footer class="page-footer pink lighten-5">
+      <div class="container">
+        <div class="row">
+          <div class="col l3 s12">
+            <h5 class="bepink-text">Contact</h5>
+            <ul>
+              <li>
+                <a class="black-text" href="#!">
+                  <i class="material-icons tiny">mail_outline</i>
+                  info@beschool.com.mx</a
+                >
+              </li>
+              <li>
+                <a class="black-text" href="#!">
+                  <i class="material-icons tiny">local_phone</i> + 52 55 7064
+                  5339</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="bepink-text">Settings</h5>
+            <ul>
+              <li>
+                <a class="black-text modal-trigger" href="#modal2"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="black-text" href="#!">Terms and conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright pink lighten-5">
+        <div class="container black-text">
+          Copyright © 2018
+          <span class="bepink-text">be School</span> | Made with
+          <a class="bepink-text" href="http://materializecss.com"
+            >Materialize</a
+          >
+          by THE Co. Media
+        </div>
+      </div>
+    </footer>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
-  <script src="js/typewritereffect.js" type="text/javascript"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="js/aosinit.js"></script>
-  <!-- <script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script src="js/typewritereffect.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/aosinit.js"></script>
+    <!-- <script>
     AOS.init();
   </script> -->
-
-</body>
-
+  </body>
 </html>
