@@ -53,10 +53,9 @@
 }
 
 #index-banner {
-  background: url('../img/background.jpg');
+  background: url('../img/background_opaque.jpg');
   background-repeat: no-repeat;
   background-size: cover;  
-  opacity: 0.7;
 }
 
 .no-pad-bot {
