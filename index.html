@@ -449,7 +449,7 @@
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img class="profile-photo" src="img/zoe2.jpg" alt="Zoe, CEO of BE School Business English" />
+                <img class="profile-photo" data-src="img/zoe2.jpg" alt="Zoe, CEO of BE School Business English" />
                 <span class="card-title">Zoe</span>
                 <a
                   class="btn-floating halfway-fab waves-effect waves-light bepink"
@@ -474,7 +474,7 @@
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img class="profile-photo" src="img/daniel.jpg" alt="Daniel English Teacher in Mexico" />
+                <img class="profile-photo" data-src="img/daniel.jpg" alt="Daniel English Teacher in Mexico" />
                 <span class="card-title">Daniel</span>
                 <a
                   class="btn-floating halfway-fab waves-effect waves-light bepink"
@@ -499,7 +499,7 @@
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img class="profile-photo" src="img/nadine.jpg" alt="Nadine Copywriter in Mexico City" />
+                <img class="profile-photo" data-src="img/nadine.jpg" alt="Nadine Copywriter in Mexico City" />
                 <span class="card-title">Nadine</span>
                 <a
                   class="btn-floating halfway-fab waves-effect waves-light bepink"
@@ -528,7 +528,7 @@
           <div class="col s12 m4">
               <div class="card">
                 <div class="card-image">
-                  <img class="profile-photo" src="img/max.jpg" alt="Max Academic Head BE School Business English"/>
+                  <img class="profile-photo" data-src="img/max.jpg" alt="Max Academic Head BE School Business English"/>
                   <span class="card-title">Max</span>
                   <a
                     class="btn-floating halfway-fab waves-effect waves-light bepink"
@@ -551,7 +551,7 @@
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img class="profile-photo" src="img/yana.jpg" alt="Yana social media expert in Mexico City"/>
+                <img class="profile-photo" data-src="img/yana.jpg" alt="Yana social media expert in Mexico City"/>
                 <span class="card-title">Yana</span>
                 <a
                   class="btn-floating halfway-fab waves-effect waves-light bepink"
@@ -576,7 +576,7 @@
           <div class="col s12 m4">
               <div class="card">
                 <div class="card-image">
-                  <img class="profile-photo" src="img/jay.jpg" alt="Jay Web Developer Mexico City"/>
+                  <img class="profile-photo" data-src="img/jay.jpg" alt="Jay Web Developer Mexico City"/>
                   <span class="card-title">Jay</span>
                   <a
                     class="btn-floating halfway-fab waves-effect waves-light bepink"
@@ -801,9 +801,10 @@
     
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script>
-      const lazyLoadCarousel = new LazyLoad({
-        elements_selector: ".carousel-photo"
-      });                           
+      const lazyLoadCarousel = new LazyLoad([
+        {elements_selector: ".carousel-photo"},
+        // {elements_selector: ".profile-photo"}
+    ]);                           
       </script>
   </body>
 </html>
