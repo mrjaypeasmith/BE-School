@@ -53,6 +53,10 @@
   font-size: 1.2em;
 }
 
+.card a {
+  color: black;
+}
+
 #index-banner {
   background-image: url(/img/background.jpg);
   background-repeat: no-repeat;
