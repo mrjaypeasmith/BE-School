@@ -4,6 +4,7 @@
     $('.carousel').carousel({padding: 100,});
     $('.button-collapse').sideNav();
     $('.collapsible').collapsible();
+    $('.tap-target').tapTarget();
     $('#modal1').modal();
     $('#modal2').modal();
 
