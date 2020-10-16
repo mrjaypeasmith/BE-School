@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   M.AutoInit();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".tap-target");
+  var instance = M.TapTarget.init(elems, options);
+});
+
 // (function($){
 //   $(function(){
 //     $('.scrollspy').scrollSpy();

@@ -505,6 +505,19 @@
       </div>
     </footer>
 
+    <!-- Element Showed -->
+    <a id="menu" class="waves-effect waves-light btn btn-floating bepink"
+      ><i class="material-icons">email</i></a
+    >
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="menu">
+      <div class="tap-target-content">
+        <h5>Title</h5>
+        <p>A bunch of text</p>
+      </div>
+    </div>
+
     <!--  Scripts-->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -520,8 +533,6 @@
         el: "#app",
         data: {
           message: "Hello!",
-          package: "",
-          course: "",
         },
         mounted() {
           if (localStorage.package) {
@@ -535,15 +546,14 @@
           selectPackage: function (selection) {
             let toastMessage = `You selected ${selection}`;
             M.toast({ html: toastMessage, classes: "bepink" });
-            package = selection;
-            console.log(`current package: ${package}`);
+            localStorage.package = selection;
+            console.log(`current package: ${selection}`);
           },
           selectCourse: function (selection) {
             let toastMessage = `You chose ${selection}`;
             M.toast({ html: toastMessage, classes: "bepink" });
-            course = selection;
-            localStorage;
-            console.log(`current course: ${course}`);
+            localStorage.course = selection;
+            console.log(`current course: ${selection}`);
           },
         },
       });

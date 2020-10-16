@@ -10,7 +10,7 @@
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 .banner {
@@ -65,10 +65,16 @@
 }
 
 .no-pad-bot {
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .01), 0 0 8px 0 rgba(0, 0, 0, .01);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.01), 0 0 8px 0 rgba(0, 0, 0, 0.01);
 }
 
 .circle {
   width: 200px;
   height: 300px;
+}
+
+#menu {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 }
