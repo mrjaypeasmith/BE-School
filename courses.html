@@ -40,15 +40,6 @@
         <a id="logo-container" href="#" class="brand-logo">be</a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a
-              href="#"
-              class="tooltipped"
-              data-position="left"
-              data-tooltip="Translation coming soon!"
-              >EN / ESP</a
-            >
-          </li>
-          <li>
             <a href="#who-are-we">Who are we?</a>
           </li>
           <li>
@@ -145,9 +136,7 @@
     <!-- How to start -->
 
     <div class="container" id="app">
-      <h1 class="section">
-        How to start your Business English Journey {{ message }}
-      </h1>
+      <h1 class="section">How to start your Business English Journey</h1>
       <h4
         class="typewrite bepink-text"
         data-period="2000"
@@ -168,6 +157,7 @@
               <img class="activator" src="img/package.png" />
             </div>
             <div class="card-content">
+              <span class="bepink-text">Step 1</span>
               <span class="card-title activator grey-text text-darken-4"
                 >Select Package</span
               >
@@ -194,6 +184,7 @@
               <img class="activator" src="img/course.png" />
             </div>
             <div class="card-content">
+              <span class="bepink-text">Step 2</span>
               <span class="card-title activator grey-text text-darken-4"
                 >Add Course</span
               >
@@ -221,6 +212,7 @@
               <img class="activator" src="img/demo.png" />
             </div>
             <div class="card-content">
+              <span class="bepink-text">Step 3</span>
               <span class="card-title activator grey-text text-darken-4"
                 >Book Free Demo</span
               >
@@ -383,7 +375,7 @@
                   </p>
                   <a
                     class="btn waves-effect btn-floating bepink"
-                    v-on:click="selectCourse('Fundamentals')"
+                    v-on:click="selectCourse('be Fundamentals')"
                     ><i class="material-icons">add</i></a
                   >
                 </div>
@@ -404,7 +396,7 @@
                   </p>
                   <a
                     class="btn waves-effect btn-floating bepink"
-                    v-on:click="selectCourse('Spoken')"
+                    v-on:click="selectCourse('be Spoken')"
                     ><i class="material-icons">add</i></a
                   >
                 </div>
@@ -423,7 +415,7 @@
                   </p>
                   <a
                     class="btn waves-effect btn-floating bepink"
-                    v-on:click="selectCourse('Business English')"
+                    v-on:click="selectCourse('be Business English')"
                     ><i class="material-icons">add</i></a
                   >
                 </div>
@@ -443,7 +435,7 @@
                   </p>
                   <a
                     class="btn waves-effect btn-floating bepink"
-                    v-on:click="selectCourse('Pro')"
+                    v-on:click="selectCourse('be Pro')"
                     ><i class="material-icons">add</i></a
                   >
                 </div>
@@ -451,6 +443,16 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <!-- Cart -->
+      <div>
+        <a
+          id="cart"
+          class="waves-effect waves-light btn btn-floating grey"
+          v-on:click="toggleCart()"
+          ><i class="material-icons">shopping_cart</i></a
+        >
       </div>
 
       <!-- End of Container -->
@@ -505,19 +507,6 @@
       </div>
     </footer>
 
-    <!-- Element Showed -->
-    <a id="menu" class="waves-effect waves-light btn btn-floating bepink"
-      ><i class="material-icons">email</i></a
-    >
-
-    <!-- Tap Target Structure -->
-    <div class="tap-target" data-target="menu">
-      <div class="tap-target-content">
-        <h5>Title</h5>
-        <p>A bunch of text</p>
-      </div>
-    </div>
-
     <!--  Scripts-->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -548,12 +537,33 @@
             M.toast({ html: toastMessage, classes: "bepink" });
             localStorage.package = selection;
             console.log(`current package: ${selection}`);
+            this.checkCart();
           },
           selectCourse: function (selection) {
             let toastMessage = `You chose ${selection}`;
             M.toast({ html: toastMessage, classes: "bepink" });
             localStorage.course = selection;
             console.log(`current course: ${selection}`);
+            this.checkCart();
+          },
+          toggleCart: function () {
+            console.log("clicked!");
+          },
+          checkCart: function () {
+            console.log("cart being checked!");
+            let cart = document.getElementById("cart");
+            console.log(cart);
+            if (localStorage.course && localStorage.package) {
+              cart.classList.replace("grey", "bepink");
+              cart.classList.add("pulse");
+              cart.setAttribute(
+                "href",
+                `https://share.hsforms.com/1DekuNvuNR1qCV_HaWgOH9Q49gkq?packages=${localStorage.package}&courses=${localStorage.course}`
+              );
+              cart.setAttribute("target", "_blank");
+            } else {
+              console.log("Need to add course or package");
+            }
           },
         },
       });

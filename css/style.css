@@ -35,6 +35,7 @@
 
 .typewrite {
   margin: 0px;
+  min-height: 150px;
 }
 
 .who-are-we {
@@ -73,7 +74,7 @@
   height: 300px;
 }
 
-#menu {
+#cart {
   position: fixed;
   bottom: 15px;
   right: 15px;
