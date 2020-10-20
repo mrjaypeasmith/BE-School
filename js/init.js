@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   M.AutoInit();
+  // const carousel = document.querySelectorAll(".carousel");
+  // let instances = M.Carousel.init(carousel, {
+  //   fullWidth: true,
+  //   indicators: true,
+  //   autoScroll: 6000,
+  // });
 });
+
+// Sidenav
 
 // (function($){
 //   $(function(){
