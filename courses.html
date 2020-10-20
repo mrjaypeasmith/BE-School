@@ -524,25 +524,25 @@
           message: "Hello!",
         },
         mounted() {
-          if (localStorage.package) {
-            this.package = localStorage.package;
+          if (sessionStorage.package) {
+            this.package = sessionStorage.package;
           }
-          if (localStorage.course) {
-            this.course = localStorage.course;
+          if (sessionStorage.course) {
+            this.course = sessionStorage.course;
           }
         },
         methods: {
           selectPackage: function (selection) {
             let toastMessage = `You selected ${selection}`;
             M.toast({ html: toastMessage, classes: "bepink" });
-            localStorage.package = selection;
+            sessionStorage.package = selection;
             console.log(`current package: ${selection}`);
             this.checkCart();
           },
           selectCourse: function (selection) {
             let toastMessage = `You chose ${selection}`;
             M.toast({ html: toastMessage, classes: "bepink" });
-            localStorage.course = selection;
+            sessionStorage.course = selection;
             console.log(`current course: ${selection}`);
             this.checkCart();
           },
@@ -553,12 +553,12 @@
             console.log("cart being checked!");
             let cart = document.getElementById("cart");
             console.log(cart);
-            if (localStorage.course && localStorage.package) {
+            if (sessionStorage.course && sessionStorage.package) {
               cart.classList.replace("grey", "bepink");
               cart.classList.add("pulse");
               cart.setAttribute(
                 "href",
-                `https://share.hsforms.com/1DekuNvuNR1qCV_HaWgOH9Q49gkq?packages=${localStorage.package}&courses=${localStorage.course}`
+                `https://share.hsforms.com/1DekuNvuNR1qCV_HaWgOH9Q49gkq?packages=${sessionStorage.package}&courses=${sessionStorage.course}`
               );
               cart.setAttribute("target", "_blank");
             } else {
