@@ -10,7 +10,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=6.0"
     />
-    <title>be School</title>
+    <title>be School | Course Selector</title>
 
     <!-- CSS  -->
     <link
@@ -37,31 +37,22 @@
 
     <nav class="bepink" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">be</a>
+        <a id="logo-container" href="/" class="brand-logo">be</a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a
-              href="#"
-              class="tooltipped"
-              data-position="left"
-              data-tooltip="Translation coming soon!"
-              >EN / ESP</a
-            >
+            <a href="/#who-are-we">Who are we?</a>
           </li>
           <li>
-            <a href="#who-are-we">Who are we?</a>
+            <a href="/#packages">Packages</a>
           </li>
           <li>
-            <a href="#packages">Packages</a>
+            <a href="/#courses">Courses</a>
           </li>
           <li>
-            <a href="#courses">Courses</a>
+            <a href="/#meet-the-team">Contact</a>
           </li>
           <li>
-            <a href="#meet-the-team">Contact</a>
-          </li>
-          <li>
-            <a href="#mission-statement">Mission Statement</a>
+            <a href="/#mission-statement">Mission Statement</a>
           </li>
           <li>
             <a
@@ -91,25 +82,19 @@
 
         <ul id="nav-mobile" class="side-nav grey-text text-darken-3">
           <li>
-            <a
-              href="#"
-              class="tooltipped"
-              data-position="bottom"
-              data-tooltip="Translation coming soon!"
-              >EN / ESP</a
-            >
+            <a href="/#who-are-we">Who are we?</a>
           </li>
           <li>
-            <a href="#who-are-we">Who are we?</a>
+            <a href="/#packages">Packages</a>
           </li>
           <li>
-            <a href="#programs">Programs</a>
+            <a href="/#courses">Courses</a>
           </li>
           <li>
-            <a href="#meet-the-team">Contact</a>
+            <a href="/#meet-the-team">Contact</a>
           </li>
           <li>
-            <a href="#mission-statement">Mission Statement</a>
+            <a href="/#mission-statement">Mission Statement</a>
           </li>
           <li>
             <a
@@ -144,22 +129,31 @@
 
     <!-- How to start -->
 
-    <div class="container">
+    <div class="container" id="app">
       <h1 class="section">How to start your Business English Journey</h1>
       <h4
-            class="typewrite bepink-text"
-            data-period="2000"
-            data-type='[ "This is not business as usual", "We love what we do", "We customize classes for you"]'
-          ></h4>
+        class="typewrite bepink-text"
+        data-period="2000"
+        data-type='[ "This is not business as usual", "We love what we do", "We customize classes for you"]'
+      ></h4>
 
-
-      <div class="row section">
+      <div
+        class="row section"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <h5 class="center">
           Select from one of our packages and then add a course
         </h5>
       </div>
 
-      <div class="row section">
+      <div
+        class="row section"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <!-- Package Card -->
         <div class="col s12 m4">
           <div class="card hoverable">
@@ -167,6 +161,7 @@
               <img class="activator" src="img/package.png" />
             </div>
             <div class="card-content">
+              <span class="bepink-text">Step 1</span>
               <span class="card-title activator grey-text text-darken-4"
                 >Select Package</span
               >
@@ -193,6 +188,7 @@
               <img class="activator" src="img/course.png" />
             </div>
             <div class="card-content">
+              <span class="bepink-text">Step 2</span>
               <span class="card-title activator grey-text text-darken-4"
                 >Add Course</span
               >
@@ -216,10 +212,11 @@
         <!-- Demo Card -->
         <div class="col s12 m4">
           <div class="card hoverable">
-            <div class=" card-image waves-effect waves-block waves-light">
+            <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="img/demo.png" />
             </div>
             <div class="card-content">
+              <span class="bepink-text">Step 3</span>
               <span class="card-title activator grey-text text-darken-4"
                 >Book Free Demo</span
               >
@@ -228,13 +225,11 @@
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"
                 ><i class="material-icons right">close</i>Book Free Demo
-                </span
-              >
+              </span>
               <p>Schedule a demo by using our Course Selector</p>
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Packages -->
@@ -251,7 +246,9 @@
         <div class="col s12 m5">
           <h3>
             Discover
-            <a class="btn waves-effect btn-floating bepink"
+            <a
+              class="btn waves-effect btn-floating bepink"
+              v-on:click="selectPackage('Discover')"
               ><i class="material-icons">add</i></a
             >
           </h3>
@@ -264,32 +261,57 @@
             <li>- ESL Resources</li>
           </ul>
         </div>
-        <div class="col"><p>When you have a busy schedule it can be difficult to schedule lessons with a teacher every week.  Discover gives you access to video tutorials so you can practice your English at the best time for you.  With short easy to follow videos that give you tips, phrases and practices Discover is accessible anytime from anywhere and helps you immerse English into your life when you’re on the go. </p></div>
+        <div class="col">
+          <p>
+            When you have a busy schedule it can be difficult to schedule
+            lessons with a teacher every week. Discover gives you access to
+            video tutorials so you can practice your English at the best time
+            for you. With short easy to follow videos that give you tips,
+            phrases and practices Discover is accessible anytime from anywhere
+            and helps you immerse English into your life when you’re on the go.
+          </p>
+        </div>
       </div>
 
       <!-- Enhance  -->
 
       <div class="row section">
         <div class="col s12 m5">
-          <h3>Enhance <a class="btn waves-effect btn-floating bepink"
-            ><i class="material-icons">add</i></a
-          ></h3>
+          <h3>
+            Enhance
+            <a
+              class="btn waves-effect btn-floating bepink"
+              v-on:click="selectPackage('Enhance')"
+              ><i class="material-icons">add</i></a
+            >
+          </h3>
           <p>Perfect for learning in a structured environment.</p>
           <p class="bepink-text">From $3,500 MXN per student / per month</p>
-                <p>Selection of courses | 3 hours per week with your Teacher | Course materials and resources</p>
-                <p></p>
-                <p></p>
-                <p class="light information">Self Study Platform with:</p>
-                <ul class="light information">
-                <li> - Video Tutorials</li>
-                <li> - Quizzes and Evaluations</li>
-                <li> - ESL Resources</li>
-                </ul>
+          <p>
+            Selection of courses | 3 hours per week with your Teacher | Course
+            materials and resources
+          </p>
+          <p></p>
+          <p></p>
+          <p class="light information">Self Study Platform with:</p>
+          <ul class="light information">
+            <li>- Video Tutorials</li>
+            <li>- Quizzes and Evaluations</li>
+            <li>- ESL Resources</li>
+          </ul>
         </div>
         <div class="col s12 m5">
           <img class="responsive-img z-depth-3" src="img/enhance.png" />
         </div>
-        <div class="col"><p>Do you prefer to have a teacher guide you through lessons, give you instant feedback and create a course specifically for you? Enhance offers you a structured Business English course with a teacher so you can reach objectives every lesson, track your progress and apply what you learned to your work instantly!</p></div>
+        <div class="col">
+          <p>
+            Do you prefer to have a teacher guide you through lessons, give you
+            instant feedback and create a course specifically for you? Enhance
+            offers you a structured Business English course with a teacher so
+            you can reach objectives every lesson, track your progress and apply
+            what you learned to your work instantly!
+          </p>
+        </div>
       </div>
 
       <!-- Advance -->
@@ -299,85 +321,145 @@
           <img class="responsive-img z-depth-3" src="img/advance.png" />
         </div>
         <div class="col s12 m5">
-          <h3>Advance <a class="btn waves-effect btn-floating bepink"
-            ><i class="material-icons">add</i></a
-          ></h3>
+          <h3>
+            Advance
+            <a
+              class="btn waves-effect btn-floating bepink"
+              v-on:click="selectPackage('Advance')"
+              ><i class="material-icons">add</i></a
+            >
+          </h3>
           <p>Perfect for learning in a structured environment.</p>
           <p class="bepink-text">From $9,000 MXN per student / per month</p>
-                <p>Selection of courses | 4 hours per week with your Business Coach | 3 hours per week with your Teacher | Course materials and resources</p>
-                <p></p>
-                <p></p>
-                <p class="light information">Self Study Platform with:</p>
-                <ul class="light information">
-                <li> - Video Tutorials</li>
-                <li> - Quizzes and Evaluations</li>
-                <li> - ESL Resources</li>
-                </ul>
-        </div>
-        <div class="col"><p>Whether you need extra practice for those important meetings or presentations, or if you need to accelerate your Business English journey, our Advance package gives you additional access to a coach when you need it most.  combining lessons with personal coaching sessions, Advance customises your sessions so you can focus on learning and practicing exactly what you need.  </p></div>
-      </div>
-
-    <!-- Courses -->
-    <div class="row section">
-      <h5 class="center">Select a Course</h5>
-    </div>
-
-    <div class="section">
-      <div class="row">
-        <div class="col s12">
-          <ul class="collapsible popout" data-collapsible="accordion">
-            <!-- Fundamentals -->
-            <li>
-              <div class="collapsible-header active">
-                <i class="material-icons">language</i>
-                <span class="bepink-text">be &nbsp</span>FUNDAMENTALS 
-              </div>
-              <div class="collapsible-body pink lighten-5 light">
-                 <p>A course developed for beginner levels, which is designed for developing a basic understanding of English.  Get started with essential management of grammar and vocabulary.</p><a class="btn waves-effect btn-floating bepink"
-                 ><i class="material-icons">add</i></a>
-              </div>
-            </li>
-            <!-- Spoken -->
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">mode_comment</i>
-                <span class="bepink-text">be &nbsp</span>SPOKEN
-              </div>
-              <div class="collapsible-body pink lighten-5 light">
-                <p>A conversation course for intermediate speakers and above.  Our teachers are trained to identify the needs of individual students and create an active and dynamic experience around conversation and the development of oral skills with current and relevant topics.</p><a class="btn waves-effect btn-floating bepink"
-                ><i class="material-icons">add</i></a>
-              </div>
-            </li>
-            <!-- Business English -->
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">group</i>
-                <span class="bepink-text">be &nbsp</span>BUSINESS ENGLISH
-              </div>
-              <div class="collapsible-body pink lighten-5 light">
-                <p>A unique learning experience! You will learn English in-depth tailored to business, with confidence building techniques for effective communication.</p><a class="btn waves-effect btn-floating bepink"
-                ><i class="material-icons">add</i></a>
-              </div>
-            </li>
-            <!-- Pro -->
-            <li>
-              <div class="collapsible-header">
-                <i class="material-icons">laptop_mac</i>
-                <span class="bepink-text">be &nbsp</span>PRO
-              </div>
-              <div class="collapsible-body pink lighten-5 light">
-                <p>A Business English course designed to meet your specific needs.  We curate the course according to what matters most to you.  We will combine real life topics, interactive practice with relevant business skills.</p><a class="btn waves-effect btn-floating bepink"
-                ><i class="material-icons">add</i></a>
-              </div>
-            </li>
+          <p>
+            Selection of courses | 4 hours per week with your Business Coach | 3
+            hours per week with your Teacher | Course materials and resources
+          </p>
+          <p></p>
+          <p></p>
+          <p class="light information">Self Study Platform with:</p>
+          <ul class="light information">
+            <li>- Video Tutorials</li>
+            <li>- Quizzes and Evaluations</li>
+            <li>- ESL Resources</li>
           </ul>
         </div>
+        <div class="col">
+          <p>
+            Whether you need extra practice for those important meetings or
+            presentations, or if you need to accelerate your Business English
+            journey, our Advance package gives you additional access to a coach
+            when you need it most. combining lessons with personal coaching
+            sessions, Advance customises your sessions so you can focus on
+            learning and practicing exactly what you need.
+          </p>
+        </div>
       </div>
-    </div>
 
+      <!-- Courses -->
+      <div class="row section">
+        <h5 class="center">Select a Course</h5>
+      </div>
 
-  
-    <!-- End of Container -->
+      <div class="section">
+        <div class="row">
+          <div class="col s12">
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <!-- Fundamentals -->
+              <li>
+                <div class="collapsible-header active">
+                  <i class="material-icons">language</i>
+                  <span class="bepink-text">be &nbsp</span>FUNDAMENTALS
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <p>
+                    A course developed for beginner levels, which is designed
+                    for developing a basic understanding of English. Get started
+                    with essential management of grammar and vocabulary.
+                  </p>
+                  <a
+                    class="btn waves-effect btn-floating bepink"
+                    v-on:click="selectCourse('be Fundamentals')"
+                    ><i class="material-icons">add</i></a
+                  >
+                </div>
+              </li>
+              <!-- Spoken -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">mode_comment</i>
+                  <span class="bepink-text">be &nbsp</span>SPOKEN
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <p>
+                    A conversation course for intermediate speakers and above.
+                    Our teachers are trained to identify the needs of individual
+                    students and create an active and dynamic experience around
+                    conversation and the development of oral skills with current
+                    and relevant topics.
+                  </p>
+                  <a
+                    class="btn waves-effect btn-floating bepink"
+                    v-on:click="selectCourse('be Spoken')"
+                    ><i class="material-icons">add</i></a
+                  >
+                </div>
+              </li>
+              <!-- Business English -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">group</i>
+                  <span class="bepink-text">be &nbsp</span>BUSINESS ENGLISH
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <p>
+                    A unique learning experience! You will learn English
+                    in-depth tailored to business, with confidence building
+                    techniques for effective communication.
+                  </p>
+                  <a
+                    class="btn waves-effect btn-floating bepink"
+                    v-on:click="selectCourse('be Business English')"
+                    ><i class="material-icons">add</i></a
+                  >
+                </div>
+              </li>
+              <!-- Pro -->
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">laptop_mac</i>
+                  <span class="bepink-text">be &nbsp</span>PRO
+                </div>
+                <div class="collapsible-body pink lighten-5 light">
+                  <p>
+                    A Business English course designed to meet your specific
+                    needs. We curate the course according to what matters most
+                    to you. We will combine real life topics, interactive
+                    practice with relevant business skills.
+                  </p>
+                  <a
+                    class="btn waves-effect btn-floating bepink"
+                    v-on:click="selectCourse('be Pro')"
+                    ><i class="material-icons">add</i></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart -->
+      <div>
+        <a
+          id="cart"
+          class="waves-effect waves-light btn btn-floating grey"
+          v-on:click="toggleCart()"
+          ><i class="material-icons">shopping_cart</i></a
+        >
+      </div>
+
+      <!-- End of Container -->
     </div>
 
     <!-- footer -->
@@ -431,19 +513,65 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
     <script src="js/typewritereffect.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/aosinit.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script>
-      const lazyLoadCarousel = new LazyLoad([
-        { elements_selector: ".carousel-photo" },
-        { elements_selector: ".profile-photo" },
-      ]);
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello!",
+        },
+        mounted() {
+          if (sessionStorage.package) {
+            this.package = sessionStorage.package;
+          }
+          if (sessionStorage.course) {
+            this.course = sessionStorage.course;
+          }
+        },
+        methods: {
+          selectPackage: function (selection) {
+            let toastMessage = `You selected ${selection}`;
+            M.toast({ html: toastMessage, classes: "bepink" });
+            sessionStorage.package = selection;
+            console.log(`current package: ${selection}`);
+            this.checkCart();
+          },
+          selectCourse: function (selection) {
+            let toastMessage = `You chose ${selection}`;
+            M.toast({ html: toastMessage, classes: "bepink" });
+            sessionStorage.course = selection;
+            console.log(`current course: ${selection}`);
+            this.checkCart();
+          },
+          toggleCart: function () {
+            console.log("clicked!");
+          },
+          checkCart: function () {
+            console.log("cart being checked!");
+            let cart = document.getElementById("cart");
+            console.log(cart);
+            if (sessionStorage.course && sessionStorage.package) {
+              cart.classList.replace("grey", "bepink");
+              cart.classList.add("pulse");
+              cart.setAttribute(
+                "href",
+                `https://share.hsforms.com/1DekuNvuNR1qCV_HaWgOH9Q49gkq?packages=${sessionStorage.package}&courses=${sessionStorage.course}`
+              );
+              cart.setAttribute("target", "_blank");
+            } else {
+              console.log("Need to add course or package");
+            }
+          },
+        },
+      });
     </script>
   </body>
 </html>
